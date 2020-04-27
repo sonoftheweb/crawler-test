@@ -20,7 +20,7 @@ class CrawlHelper
 
     public function __construct()
     {
-        $this->content = new DomDocument();
+        $this->content = new DOMDocument();
         libxml_use_internal_errors(true);
     }
 

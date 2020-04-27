@@ -3,11 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Helper\CrawlHelper;
-use App\Models\Domain;
-use App\Models\Page;
-use DOMDocument;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
 
 class CrawlerController extends Controller
 {
