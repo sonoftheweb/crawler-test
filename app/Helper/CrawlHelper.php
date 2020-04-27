@@ -20,15 +20,12 @@ class CrawlHelper
 
     public function __construct()
     {
-        /*$this->content = new DOMDocument();
-        libxml_use_internal_errors(true);*/
+        $this->content = new DOMDocument();
+        libxml_use_internal_errors(true);
     }
 
     public function begin(Request $request)
     {
-        $this->content = new DOMDocument();
-        libxml_use_internal_errors(true);
-
         $parsedURL = $this->parseUrl($request->website);
 
         // create cookie folder for this domain in Storage
